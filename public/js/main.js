@@ -10,8 +10,8 @@
   document.addEventListener('DocumentLocalized', function() { // l20n ready
     document.body.classList.remove('hidden');
 
-//    $(".button-collapse").sideNav();
-    $(".dropdown-button").dropdown();
+    $(".button-collapse").sideNav();
+//    $(".dropdown-button").dropdown();
     var currentLocation = localStorage.getItem('location');
     var source;
     var renderList = function() {
@@ -29,8 +29,8 @@
         }
         fragment += '><a href="#" id="' + item.place.text + '">' + item.place.text + '</a></li>';
       }
-//      $('#nav-mobile').html(fragment);
-      $('#dropdown1').html(fragment);
+      $('#nav-mobile').html(fragment);
+//      $('#dropdown1').html(fragment);
     }
 
     $.ajax({
